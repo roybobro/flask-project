@@ -1,0 +1,13 @@
+name: Push Notification
+
+on: push
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "New push received to $GITHUB_REF"
+
+
+
